@@ -1,4 +1,4 @@
 operating
 open
 
-	ChromePlatform current
+	self openURL: ''
