@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 01:40",
+	"super" : "Object",
+	"category" : "Chrome-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"type",
+		"title",
+		"description",
+		"url",
+		"webSocketDebuggerUrl",
+		"devtoolsFrontendUrl"
+	],
+	"name" : "ChromeTabPage",
+	"type" : "normal"
+}
