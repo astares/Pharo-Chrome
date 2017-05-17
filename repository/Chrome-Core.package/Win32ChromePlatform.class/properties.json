@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 00:07",
+	"super" : "ChromePlatform",
+	"category" : "Chrome-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Win32ChromePlatform",
+	"type" : "normal"
+}

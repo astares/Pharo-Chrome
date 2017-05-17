@@ -1,0 +1,4 @@
+testing
+isInDebugMode
+
+	^debugPort notNil 

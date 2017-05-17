@@ -1,0 +1,1 @@
+General chrome settings

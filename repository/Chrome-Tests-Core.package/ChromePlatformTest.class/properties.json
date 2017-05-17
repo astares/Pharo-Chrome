@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 00:51",
+	"super" : "TestCase",
+	"category" : "Chrome-Tests-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ChromePlatformTest",
+	"type" : "normal"
+}

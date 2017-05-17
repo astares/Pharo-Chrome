@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 00:00",
+	"super" : "Object",
+	"category" : "Chrome-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"debugPort"
+	],
+	"name" : "GoogleChrome",
+	"type" : "normal"
+}

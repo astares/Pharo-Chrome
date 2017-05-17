@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 00:47",
+	"super" : "TestCase",
+	"category" : "Chrome-Tests-Core-Settings",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GoogleChromeSettingsTest",
+	"type" : "normal"
+}

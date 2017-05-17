@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 00:40",
+	"super" : "Object",
+	"category" : "Chrome-Core-Settings",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DebugPort",
+		"ExecutableLocation"
+	],
+	"instvars" : [ ],
+	"name" : "GoogleChromeSettings",
+	"type" : "normal"
+}
