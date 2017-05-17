@@ -1,4 +1,4 @@
 accessing
 executableLocation
 
-	ExecutableLocation ifNil: [ ExecutableLocation := ChromePlatform current defaultExecutableLocation ]
+	^ExecutableLocation ifNil: [ ExecutableLocation := ChromePlatform current defaultExecutableLocation ]
