@@ -1,4 +1,4 @@
 examples
 exampleEvalutionOfJavaScript
-	GoogleChrome openForRemoteDebugging 
+	GoogleChrome open
  		tabPages first evaluate: 'alert(''Hello'')'

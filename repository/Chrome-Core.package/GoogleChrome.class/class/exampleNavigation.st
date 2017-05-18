@@ -1,4 +1,4 @@
 examples
 exampleNavigation
-	GoogleChrome openForRemoteDebugging 
+	GoogleChrome open 
  		tabPages first navigateTo: 'http://www.pharo.org'

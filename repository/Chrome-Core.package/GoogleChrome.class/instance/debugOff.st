@@ -1,3 +1,3 @@
-debugging
+operating
 debugOff
-	isInDebugMode := true
+	isInDebugMode := false
