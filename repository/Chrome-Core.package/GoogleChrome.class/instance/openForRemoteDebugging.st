@@ -4,4 +4,6 @@ openForRemoteDebugging
 
 	self 
 		debugOn;
-		open
+		open.
+	2 seconds wait	
+	
