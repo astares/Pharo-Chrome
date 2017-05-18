@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/18/2017 08:58",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfChrome",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfChrome",
+	"type" : "normal"
+}
