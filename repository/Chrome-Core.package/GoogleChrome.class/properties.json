@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"debugPort"
+		"debugPort",
+		"isInDebugMode",
+		"host"
 	],
 	"name" : "GoogleChrome",
 	"type" : "normal"

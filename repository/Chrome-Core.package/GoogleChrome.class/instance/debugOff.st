@@ -1,3 +1,3 @@
 debugging
 debugOff
-	debugPort := nil
+	isInDebugMode := true

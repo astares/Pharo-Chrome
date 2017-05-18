@@ -1,4 +1,4 @@
-operating
+running
 openForRemoteDebugging
 	"Open in debug mode"
 

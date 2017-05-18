@@ -1,3 +1,3 @@
 debugging
 debugOn
-	debugPort := GoogleChromeSettings debugPort
+	isInDebugMode := true

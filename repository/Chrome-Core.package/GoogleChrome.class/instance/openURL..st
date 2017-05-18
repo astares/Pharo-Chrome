@@ -1,4 +1,4 @@
-operating
+private - operating
 openURL: anURL
 	|args|
 	args := self isInDebugMode 

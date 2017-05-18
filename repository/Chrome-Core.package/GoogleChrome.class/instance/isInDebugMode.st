@@ -1,4 +1,4 @@
 testing
 isInDebugMode
 
-	^debugPort notNil 
+	^isInDebugMode = true 
