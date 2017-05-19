@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorstenBergmann 5/19/2017 12:01",
+	"super" : "ChromePlatform",
+	"category" : "Chrome-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UnixChromePlatform",
+	"type" : "normal"
+}
