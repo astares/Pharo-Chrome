@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "TorstenBergmann 5/18/2017 00:00",
+	"commentStamp" : "AlistairGrant 5/20/2017 09:55",
 	"super" : "Object",
 	"category" : "Chrome-Core-Base",
 	"classinstvars" : [ ],
@@ -8,7 +8,8 @@
 	"instvars" : [
 		"debugPort",
 		"isInDebugMode",
-		"host"
+		"host",
+		"userDataDir"
 	],
 	"name" : "GoogleChrome",
 	"type" : "normal"
