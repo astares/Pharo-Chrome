@@ -9,7 +9,8 @@
 		"debugPort",
 		"isInDebugMode",
 		"host",
-		"userDataDir"
+		"userDataDir",
+		"webSocket"
 	],
 	"name" : "GoogleChrome",
 	"type" : "normal"
