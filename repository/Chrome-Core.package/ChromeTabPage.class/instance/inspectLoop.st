@@ -2,7 +2,7 @@ operating
 inspectLoop
 
 	[ [ true ] whileTrue: 
-		[ [self webSocket readMessage inspect]
+		[ [self processReceivedMessage: self webSocket readMessage]
 			on: ConnectionTimedOut
-			do: [ :ex | 'Loop again' ] ]
+			do: [ :ex | ex retry ] ]
 	] forkNamed: 'ChromeTabPage'.

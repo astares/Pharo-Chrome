@@ -1,9 +1,8 @@
 private
-checkResponse: responseString
+checkResponse: responseDictionary
 
 	| ston |
 
-	ston := STON fromString: responseString.
-	(ston at: 'result') isEmpty ifFalse:
+	(responseDictionary at: 'result') isEmpty ifFalse:
 		[ self halt: 'looks like bad response' ].
 	^true

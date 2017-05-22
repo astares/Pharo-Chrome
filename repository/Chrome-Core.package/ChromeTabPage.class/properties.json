@@ -13,7 +13,9 @@
 		"url",
 		"webSocketDebuggerUrl",
 		"devtoolsFrontendUrl",
-		"webSocket"
+		"webSocket",
+		"messageId",
+		"messageProcessors"
 	],
 	"name" : "ChromeTabPage",
 	"type" : "normal"

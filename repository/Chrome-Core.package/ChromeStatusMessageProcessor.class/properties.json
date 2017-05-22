@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ChromeMessageProcessor",
+	"category" : "Chrome-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"semaphore",
+		"result"
+	],
+	"name" : "ChromeStatusMessageProcessor",
+	"type" : "normal"
+}
