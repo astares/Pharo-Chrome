@@ -1,7 +1,6 @@
 operating
 enableDOM
 
-	^self sendMessage: ('{
-        "id": 1,
-        "method": "DOM.enable"
-      }')
+	^self sendMessageDictionary: ({
+        'method' -> 'DOM.enable'
+      } asDictionary)

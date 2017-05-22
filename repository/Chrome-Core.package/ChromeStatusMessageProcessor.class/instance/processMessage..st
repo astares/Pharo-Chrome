@@ -1,6 +1,6 @@
 messages
 processMessage: aMessageDictionary
 
-	(aMessageDictionary at: 'id') = id ifFalse: [ ^self ].
+	(aMessageDictionary at: 'id' ifAbsent: [nil]) = id ifFalse: [ ^self ].
 	result := aMessageDictionary.
 	semaphore signal
