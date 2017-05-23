@@ -8,7 +8,8 @@
 	"instvars" : [
 		"semaphore",
 		"frameId",
-		"inProgressFrames"
+		"inProgressFrames",
+		"rootNode"
 	],
 	"name" : "ChromeSetChildNodeProcessor",
 	"type" : "normal"

@@ -15,7 +15,8 @@
 		"devtoolsFrontendUrl",
 		"webSocket",
 		"messageId",
-		"messageProcessors"
+		"messageProcessors",
+		"messageQueue"
 	],
 	"name" : "ChromeTabPage",
 	"type" : "normal"
