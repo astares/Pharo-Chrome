@@ -1,7 +1,7 @@
 initialization
 initialize
-	| debugOn |
+	 
 	super initialize.
-	debugOn := true.
+	self debugOn.
 	debugPort := GoogleChromeSettings debugPort.
 	host := 'localhost'

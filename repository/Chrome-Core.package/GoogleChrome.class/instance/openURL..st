@@ -8,7 +8,7 @@ openURL: anURL
 				<< userDataDir fullName ].
 		self isInDebugMode 
 			ifFalse: [ stream
-							<< ' -- ';
+							<< ' ';
 							<< anURL ]
 			ifTrue: [ stream
 							<< ' --remote-debugging-port=';
