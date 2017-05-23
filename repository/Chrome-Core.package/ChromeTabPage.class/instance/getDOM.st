@@ -1,6 +1,11 @@
 operating
 getDOM
 
-	^self sendMessageDictionary: ({
+	| result processor |
+	processor := ChromeSetChildNodeProcessor new.
+	self addMessageProcessor: processor.
+	result := self sendMessageDictionary: ({
         'method' -> 'DOM.getDocument'
-      } asDictionary)
+      } asDictionary).
+	processor  frameId: ((result at: 'result')).
+	processor wait.
