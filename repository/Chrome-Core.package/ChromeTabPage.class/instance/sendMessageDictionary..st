@@ -1,4 +1,4 @@
 operating
 sendMessageDictionary: aDictionary
 
-	^self sendMessageDictionary: aDictionary wait: true.
+	^self sendMessageDictionary: aDictionary wait: false.

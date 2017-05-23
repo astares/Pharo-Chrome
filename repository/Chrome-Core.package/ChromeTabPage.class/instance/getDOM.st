@@ -6,6 +6,6 @@ getDOM
 	self addMessageProcessor: processor.
 	result := self sendMessageDictionary: ({
         'method' -> 'DOM.getDocument'
-      } asDictionary) wait: false.
+      } asDictionary).
 	"processor  frameId: ((result at: 'result'))."
 	"processor wait."
