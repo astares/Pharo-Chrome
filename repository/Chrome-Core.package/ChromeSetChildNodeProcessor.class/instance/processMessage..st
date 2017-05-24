@@ -1,14 +1,8 @@
 messages
 processMessage: aMessageDictionary
 
-	| params parentId parentNode newNodes |
+	| params parentId newNodes |
 
-	aMessageDictionary at: 'result' ifPresent: 
-		[ :result | 
-			result at: 'root' ifPresent:
-				[ :root | rootNode := GCDTNode fromDictionary: root ].
-			result at: 'frameId' ifPresent:
-				[ :fid | frameId := fid ] ].
 	aMessageDictionary at: 'method' ifPresent:
 		[ :method |
 			method = 'Page.frameStartedLoading' ifTrue:
@@ -19,7 +13,8 @@ processMessage: aMessageDictionary
 				[ params := aMessageDictionary at: 'params'.
 				parentId := params at: 'parentId'.
 				newNodes := params at: 'nodes'.
-				parentNode := rootNode atNodeId: parentId.
-				parentNode children: (parentNode children, newNodes).
+				parentId = rootNode nodeId ifTrue:
+					[ rootNode children: (rootNode children, newNodes).
+					semaphore signal ].
 				].
 			].

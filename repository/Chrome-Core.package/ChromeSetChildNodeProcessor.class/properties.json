@@ -10,9 +10,7 @@
 		"startedFrames",
 		"loadedFrames",
 		"rootNode",
-		"frameId",
-		"result",
-		"id"
+		"result"
 	],
 	"name" : "ChromeSetChildNodeProcessor",
 	"type" : "normal"

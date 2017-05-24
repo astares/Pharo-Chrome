@@ -1,7 +1,6 @@
 instance creation
-id: aMessageId rootNode: rootNode
+rootNode: rootNode
 
 	^self new
-		id: aMessageId;
 		rootNode: rootNode;
 		yourself.
