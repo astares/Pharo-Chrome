@@ -1,7 +1,14 @@
 accessing
 requestChildNodesAt: nodeId depth: depth
 
-	^self sendMessageDictionary: ({
+	| result processor |
+
+	processor := ChromeSetChildNodeProcessor new.
+	self addMessageProcessor: processor.
+	result := self sendMessageDictionary: {
         'method' -> 'DOM.requestChildNodes'.
         'params' -> {'nodeId' -> nodeId. 'depth' -> depth} asDictionary
-      } asDictionary)
+      } asDictionary.
+	self checkResponse: result.
+	processor wait.
+	^result

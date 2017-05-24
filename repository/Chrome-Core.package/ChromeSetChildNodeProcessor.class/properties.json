@@ -9,7 +9,8 @@
 		"semaphore",
 		"startedFrames",
 		"loadedFrames",
-		"rootNode"
+		"rootNode",
+		"frameId"
 	],
 	"name" : "ChromeSetChildNodeProcessor",
 	"type" : "normal"

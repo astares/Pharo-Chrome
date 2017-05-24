@@ -1,7 +1,8 @@
 messages
 processMessage: aMessageDictionary
 
-	self halt.
+	| params parentId parentNode newNodes |
+
 	aMessageDictionary at: 'result' ifPresent: 
 		[ :result | 
 			result at: 'root' ifPresent:
@@ -14,4 +15,11 @@ processMessage: aMessageDictionary
 				[ startedFrames add: ((aMessageDictionary at: 'params') at: 'frameId') ].
 			method = 'Page.frameStoppedLoading' ifTrue:
 				[ loadedFrames add: ((aMessageDictionary at: 'params') at: 'frameId') ].
+			method = 'DOM.setChildNodes' ifTrue:
+				[ params := aMessageDictionary at: 'params'.
+				parentId := params at: 'parentId'.
+				newNodes := params at: 'nodes'.
+				parentNode := rootNode atNodeId: parentId.
+				parentNode children: (parentNode children, newNodes).
+				].
 			].
