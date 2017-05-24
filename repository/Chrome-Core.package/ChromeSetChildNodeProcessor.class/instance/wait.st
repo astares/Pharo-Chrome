@@ -1,4 +1,0 @@
-messages
-wait
-
-	^semaphore wait

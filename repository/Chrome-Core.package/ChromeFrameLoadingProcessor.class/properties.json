@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"result"
+		"frameId"
 	],
-	"name" : "ChromeStatusMessageProcessor",
+	"name" : "ChromeFrameLoadingProcessor",
 	"type" : "normal"
 }
