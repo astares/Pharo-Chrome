@@ -1,4 +1,4 @@
-operating
+operations - page
 captureScreenshot
 
 	| base64 json |

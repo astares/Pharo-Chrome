@@ -15,6 +15,7 @@ processMessage: aMessageDictionary
 				newNodes := params at: 'nodes'.
 				parentId = rootNode nodeId ifTrue:
 					[ rootNode children: (rootNode children, newNodes).
+					rootNode childNodeCount: rootNode children size.
 					semaphore signal ].
 				].
 			].

@@ -1,4 +1,4 @@
-operating
+operations - dom
 getOuterHTML: nodeId
 
 	^self sendMessage: ('\{

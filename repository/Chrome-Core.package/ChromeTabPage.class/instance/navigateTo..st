@@ -1,4 +1,4 @@
-operating
+operations - page
 navigateTo: anURL
 
 	^self sendMessageDictionary: {

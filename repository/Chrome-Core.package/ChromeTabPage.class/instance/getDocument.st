@@ -1,5 +1,5 @@
-operating
-getDOM
+operations - dom
+getDocument
 
 	| result rootNode |
 	result := self sendMessageDictionary: ({
@@ -7,4 +7,4 @@ getDOM
       } asDictionary).
 	self checkResponse: result.
 	rootNode := (result at: 'result') at: 'root'.
-	^GCDTNode fromDictionary: rootNode.
+	^ChromeNode fromDictionary: rootNode.

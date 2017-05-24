@@ -1,4 +1,4 @@
-operating
+operations - page
 enablePage
 
 	^self sendMessageDictionary: {

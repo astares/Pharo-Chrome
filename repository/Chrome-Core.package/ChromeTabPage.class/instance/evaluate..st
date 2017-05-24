@@ -1,4 +1,4 @@
-operating
+operations - runtime
 evaluate: aString
 
 	^self sendMessage: ('\{

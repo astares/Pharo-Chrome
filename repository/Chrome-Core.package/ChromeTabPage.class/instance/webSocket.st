@@ -1,4 +1,7 @@
-private
+accessing
 webSocket
 
-	^webSocket ifNil: [ webSocket := ZnWebSocket to: self webSocketDebuggerUrl ]
+	^webSocket ifNil:
+		[ webSocket := ZnWebSocket to: self webSocketDebuggerUrl.
+		self startMessageListener.
+		webSocket ]

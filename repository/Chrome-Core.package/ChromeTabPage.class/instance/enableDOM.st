@@ -1,4 +1,4 @@
-operating
+operations - dom
 enableDOM
 
 	^self sendMessageDictionary: ({

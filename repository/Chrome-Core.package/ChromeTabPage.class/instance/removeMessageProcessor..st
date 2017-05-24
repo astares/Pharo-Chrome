@@ -1,4 +1,4 @@
-accessing
+private
 removeMessageProcessor: aMessageProcessor
 
 	^messageProcessors remove: aMessageProcessor

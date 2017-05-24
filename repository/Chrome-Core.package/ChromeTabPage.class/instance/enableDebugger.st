@@ -1,4 +1,4 @@
-operating
+operations - debugger
 enableDebugger
 
 	^self sendMessage: ('{

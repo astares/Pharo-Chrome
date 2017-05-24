@@ -1,4 +1,4 @@
-operating
+private
 sendMessageDictionary: aDictionary wait: waitBoolean
 
 	| result processor mid |
