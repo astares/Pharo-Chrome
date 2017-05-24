@@ -1,7 +1,7 @@
 operating
 getDOM
 
-	| result processor |
+	| result rootNode |
 	"processor := ChromeSetChildNodeProcessor new."
 	"self addMessageProcessor: processor."
 	result := self sendMessageDictionary: ({
@@ -9,3 +9,6 @@ getDOM
       } asDictionary).
 	"processor  frameId: ((result at: 'result'))."
 	"processor wait."
+	self checkResponse: result.
+	rootNode := (result at: 'result') at: 'root'.
+	^GCDTNode fromDictionary: rootNode.
