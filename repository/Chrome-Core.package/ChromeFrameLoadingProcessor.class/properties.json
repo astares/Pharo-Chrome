@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "AlistairGrant 5/25/2017 18:30",
 	"super" : "ChromeMessageProcessor",
 	"category" : "Chrome-Core-Model",
 	"classinstvars" : [ ],
@@ -7,7 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"frameId",
-		"messageQueue"
+		"messageQueue",
+		"loading",
+		"stoppedLoading",
+		"loadedTimestamp",
+		"idleProcess"
 	],
 	"name" : "ChromeFrameLoadingProcessor",
 	"type" : "normal"

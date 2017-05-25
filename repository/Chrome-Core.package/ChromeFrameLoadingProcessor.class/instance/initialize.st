@@ -2,4 +2,7 @@ initialize
 initialize
 
 	super initialize.
-	messageQueue := OrderedCollection new.
+	loading := Bag new.
+	stoppedLoading := Bag new.
+	loadedTimestamp := nil.
+	idleProcess := nil.

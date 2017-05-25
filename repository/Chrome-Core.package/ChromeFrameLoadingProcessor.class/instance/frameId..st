@@ -1,6 +1,6 @@
-private accessing
-frameId: anObject
+accessing
+frameId: aFrameId
 	"Set the frame ID
-	This will trigger the process loop to check stored messages"
+	Once the Id is set, the process loop will no longer access the queue, so we can process it now"
 
-	frameId := anObject
+	frameId := aFrameId.

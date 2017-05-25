@@ -5,11 +5,13 @@ navigateTo: anURL
 
 	"Add the frame loading processor so it can collect messages until the frameId is known"
 	processor := ChromeFrameLoadingProcessor frameId: nil.
+	self addMessageProcessor: processor.
 	result := self sendMessageDictionary: {
         'method' -> 'Page.navigate'.
         'params' -> { 'url' -> anURL } asDictionary.
 		} asDictionary.
-	"Update the frame loading processor with the frame id.  This will trigger it to process all existing messages (not really)"
+	"Update the frame loading processor with the frame id.  This will also process any saved messages."
 	processor frameId: ((result at: 'result') at: 'frameId').
 	processor wait.
+	self removeMessageProcessor: processor.
 	^result.

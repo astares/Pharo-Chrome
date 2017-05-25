@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"dictionary"
+		"dictionary",
+		"parent"
 	],
 	"name" : "ChromeNode",
 	"type" : "normal"

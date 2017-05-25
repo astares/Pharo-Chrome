@@ -7,4 +7,4 @@ getDocument
       } asDictionary).
 	self checkResponse: result.
 	rootNode := (result at: 'result') at: 'root'.
-	^ChromeNode fromDictionary: rootNode.
+	^ChromeNode fromDictionary: rootNode parent: nil.

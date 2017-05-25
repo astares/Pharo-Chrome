@@ -1,7 +1,25 @@
 messages
 processMessage: aMessageDictionary
 
-	frameId ifNil: 
-		[ messageQueue add: aMessageDictionary ]
-	ifNotNil: 
-		[ self checkMessages: aMessageDictionary ]
+	| params messageFrameId |
+
+	aMessageDictionary at: 'method' ifPresent:
+		[ :method |
+			params := aMessageDictionary at: 'params'.
+			method = 'Page.frameStartedLoading' ifTrue:
+				[
+				messageFrameId := params at: 'frameId'.
+				loading add: messageFrameId.
+				].
+			method = 'Page.frameStoppedLoading' ifTrue:
+				[
+				messageFrameId := params at: 'frameId'.
+				loading remove: messageFrameId.
+				stoppedLoading add: messageFrameId.
+				].
+			loading isEmpty ifTrue: 
+				[ loadedTimestamp := DateAndTime now.
+				self ensureIdleTimer ]
+			ifFalse:
+				[ loadedTimestamp := nil ].
+		].
