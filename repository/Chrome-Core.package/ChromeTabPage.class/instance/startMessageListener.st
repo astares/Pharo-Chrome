@@ -1,9 +1,12 @@
 private
 startMessageListener
+	"Start the page's message receiving and processing process."
+	| messageString |
 
 	[ [ self isOpen ] whileTrue: 
-		[ [ [messageQueue add: self webSocket readMessage.
-			self processReceivedMessage: messageQueue last]
+		[ [ [ messageString := self webSocket readMessage.
+			messageQueue add: messageString.
+			self processReceivedMessage: messageString]
 			on: ConnectionTimedOut
 			do: [ :ex | ex retry ] ]
 				on: ConnectionClosed 
