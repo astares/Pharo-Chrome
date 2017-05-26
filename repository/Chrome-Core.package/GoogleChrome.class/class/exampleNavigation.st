@@ -1,9 +1,9 @@
 examples
 exampleNavigation
-	| chrome page |
+	| chrome page logger |
 
-	InMemoryLogger resetInstance.
-	InMemoryLogger start.
+	logger := InMemoryLogger new.
+	logger start.
 	chrome := GoogleChrome new
             debugOn;
 				debugSession;
@@ -17,5 +17,5 @@ exampleNavigation
 	page getDocument.
 	page getMissingChildren.
 	page updateTitle.
-	InMemoryLogger stopAll.
-	^{ chrome. page. InMemoryLogger instance }
+	logger stop.
+	^{ chrome. page. logger. }
