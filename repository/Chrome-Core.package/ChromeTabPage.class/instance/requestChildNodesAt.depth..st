@@ -11,4 +11,5 @@ requestChildNodesAt: rootNode depth: depth
       } asDictionary.
 	self checkResponse: result.
 	processor wait.
+	self removeMessageProcessor: processor.
 	^result

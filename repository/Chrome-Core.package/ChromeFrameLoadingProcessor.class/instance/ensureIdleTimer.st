@@ -5,12 +5,16 @@ ensureIdleTimer
 
 	idleProcess ifNotNil: [ ^self ].
 	
-	idleProcess := [ | done timeDiff |
+	idleProcess := [ | done timeDiff frameLoaded |
+		StringSignal log: 'Started idle timer'.
 		done := false.
 		[ done ] whileFalse:
 			[ (Delay forMilliseconds: 500) wait.
-			(loadedTimestamp isNotNil and: [ stoppedLoading includes: frameId ]) ifTrue: [
+			frameLoaded := stoppedLoading includes: frameId.
+			StringSignal log: 'Idle: ', loadedTimestamp printString, ' frameLoaded: ', frameLoaded printString.
+			(loadedTimestamp isNotNil and: [ frameLoaded ]) ifTrue: [
 				timeDiff := (DateAndTime now - loadedTimestamp) asMilliSeconds.
+				StringSignal log: 'timeDiff: ', timeDiff printString.
 		 		timeDiff >= 499 ifTrue:
 					[ idleProcess := nil.
 					done := true.
