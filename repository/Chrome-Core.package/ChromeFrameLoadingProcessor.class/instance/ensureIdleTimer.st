@@ -15,9 +15,8 @@ ensureIdleTimer
 			(loadedTimestamp isNotNil and: [ frameLoaded ]) ifTrue: [
 				timeDiff := (DateAndTime now - loadedTimestamp) asMilliSeconds.
 				StringSignal log: 'timeDiff: ', timeDiff printString.
-		 		timeDiff >= 499 ifTrue:
-					[ idleProcess := nil.
-					done := true.
+		 		timeDiff >= 2499 ifTrue:
+					[ done := true.
 					semaphore signal. ]
 				]
 			]

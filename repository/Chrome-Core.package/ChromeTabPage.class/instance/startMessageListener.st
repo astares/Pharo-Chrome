@@ -6,6 +6,7 @@ startMessageListener
 	[ [ self isOpen ] whileTrue: 
 		[ [ [ messageString := self webSocket readMessage.
 			messageQueue add: messageString.
+			StringSignal log: 'Received message: ', messageString.
 			self processReceivedMessage: messageString]
 			on: ConnectionTimedOut
 			do: [ :ex | ex retry ] ]

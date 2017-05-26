@@ -21,8 +21,10 @@ processMessage: aMessageDictionary
 				StringSignal log: 'stop loading ', messageFrameId printString.
 				].
 			loading isEmpty ifTrue: 
-				[ loadedTimestamp := DateAndTime now.
+				[
+				loadedTimestamp := DateAndTime now.
 				self ensureIdleTimer ]
 			ifFalse:
 				[ loadedTimestamp := nil ].
+			StringSignal log: 'Updated loadedTimestamp: ', loadedTimestamp printString.
 		].
