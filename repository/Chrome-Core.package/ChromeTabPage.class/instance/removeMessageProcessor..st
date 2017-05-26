@@ -1,4 +1,5 @@
 private
 removeMessageProcessor: aMessageProcessor
 
-	^messageProcessors remove: aMessageProcessor
+	^messageProcessorMutex critical: 
+		[ messageProcessors remove: aMessageProcessor ]

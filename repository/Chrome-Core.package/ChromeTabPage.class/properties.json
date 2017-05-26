@@ -16,6 +16,7 @@
 		"webSocket",
 		"messageId",
 		"messageProcessors",
+		"messageProcessorMutex",
 		"messageQueue",
 		"rootNode"
 	],

@@ -1,4 +1,5 @@
 private
 addMessageProcessor: aMessageProcessor
 
-	^messageProcessors add: aMessageProcessor
+	^messageProcessorMutex critical: 
+		[ messageProcessors add: aMessageProcessor ]
