@@ -16,7 +16,8 @@
 		"webSocket",
 		"messageId",
 		"messageProcessors",
-		"messageQueue"
+		"messageQueue",
+		"rootNode"
 	],
 	"name" : "ChromeTabPage",
 	"type" : "normal"

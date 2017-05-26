@@ -1,5 +1,5 @@
 operations - dom
-getMissingChildren: rootNode
+getMissingChildren
 
 	| childless |
 	childless := rootNode allSelect: [ :each | each childNodeCount > each children size ].
