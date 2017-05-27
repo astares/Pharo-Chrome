@@ -11,7 +11,8 @@
 		"loading",
 		"stoppedLoading",
 		"loadedTimestamp",
-		"idleProcess"
+		"idleProcess",
+		"pageLoadDelay"
 	],
 	"name" : "ChromeFrameLoadingProcessor",
 	"type" : "normal"

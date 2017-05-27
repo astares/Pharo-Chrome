@@ -18,7 +18,8 @@
 		"messageProcessors",
 		"messageProcessorMutex",
 		"messageQueue",
-		"rootNode"
+		"rootNode",
+		"pageLoadDelay"
 	],
 	"name" : "ChromeTabPage",
 	"type" : "normal"

@@ -6,3 +6,4 @@ initialize
 	messageProcessors := OrderedCollection new.
 	messageProcessorMutex := Mutex new.
 	messageQueue := OrderedCollection new.
+	pageLoadDelay := 2000.

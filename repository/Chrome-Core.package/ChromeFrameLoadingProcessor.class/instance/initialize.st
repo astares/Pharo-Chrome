@@ -6,3 +6,4 @@ initialize
 	stoppedLoading := Bag new.
 	loadedTimestamp := nil.
 	idleProcess := nil.
+	pageLoadDelay := 2000.
