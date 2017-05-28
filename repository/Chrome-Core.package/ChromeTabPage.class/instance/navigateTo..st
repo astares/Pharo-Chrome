@@ -3,6 +3,7 @@ navigateTo: anURL
 
 	| result processor |
 
+	self assert: anURL isNotNil.
 	"Add the frame loading processor so it can collect messages until the frameId is known"
 	processor := ChromeFrameLoadingProcessor frameId: nil.
 	processor pageLoadDelay: pageLoadDelay.
