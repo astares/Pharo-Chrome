@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestResource",
+	"category" : "Chrome-Tests-Core-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"page1html",
+		"browser",
+		"page"
+	],
+	"name" : "GoogleChromeTestResource",
+	"type" : "normal"
+}

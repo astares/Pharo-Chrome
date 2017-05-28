@@ -12,7 +12,7 @@ sendMessage: aDictionary wait: waitBoolean
 		processor := ChromeStatusMessageProcessor forMessageId: mid.
 		self addMessageProcessor: processor ].
 	"Send the message"
-	self sendMessage: (STON toJsonString: aDictionary).
+	self sendMessageString: (STON toJsonString: aDictionary).
 	"If requested, wait for operation completion"
 	waitBoolean ifTrue: [
 		processor wait.
