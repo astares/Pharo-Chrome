@@ -10,7 +10,8 @@ processMessage: aMessageDictionary
 				[
 				messageFrameId := params at: 'frameId'.
 				loading add: messageFrameId.
-				StringSignal log: 'start loading ', messageFrameId printString.
+				ChromeStringSignal log: 'start loading ', messageFrameId printString
+					category: self class.
 				].
 			method = 'Page.frameStoppedLoading' ifTrue:
 				[
@@ -18,7 +19,8 @@ processMessage: aMessageDictionary
 				loading remove: messageFrameId
 					ifAbsent: [ StringSignal log: 'unable to remove ', messageFrameId printString ].
 				stoppedLoading add: messageFrameId.
-				StringSignal log: 'stop loading ', messageFrameId printString.
+				ChromeStringSignal log: 'stop loading ', messageFrameId printString
+					category: self class.
 				].
 			loading isEmpty ifTrue: 
 				[
@@ -26,5 +28,6 @@ processMessage: aMessageDictionary
 				self ensureIdleTimer ]
 			ifFalse:
 				[ loadedTimestamp := nil ].
-			StringSignal log: 'Updated loadedTimestamp: ', loadedTimestamp printString.
+			ChromeStringSignal log: 'Updated loadedTimestamp: ', loadedTimestamp printString
+				category: self class.
 		].

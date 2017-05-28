@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"message"
+		"message",
+		"category"
 	],
-	"name" : "ChromeMessageListenerSignal",
+	"name" : "ChromeStringSignal",
 	"type" : "normal"
 }

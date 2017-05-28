@@ -21,11 +21,18 @@ ensureIdleTimer
 			(loadedTimestamp isNotNil and: [ frameLoaded ]) ifTrue: [
 				timeDiff := (DateAndTime now - loadedTimestamp) asMilliSeconds.
 				ChromeIdleTimerSignal new 
-					log: 'timeDiff';
-					timeDiff: timeDiff.
+					message: 'timeDiff';
+					timeDiff: timeDiff;
+					log.
 		 		timeDiff >= pageLoadDelay ifTrue:
 					[ done := true.
+					ChromeIdleTimerSignal new
+						message: 'Signalling';
+						log.
 					semaphore signal. ]
 				]
-			]
+			].
+		ChromeIdleTimerSignal new 
+			message: 'Idle Timer Done';
+			log.
 		] forkNamed: 'Chrome Idle Timer'
