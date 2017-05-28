@@ -12,6 +12,7 @@ Instance Variables:
 	webSocketDebuggerUrl: <String> The URL assigned by the browser
 	webSocket: <ZnWebSocket> the connection to the browser page
 	messageId: <Integer> The last request message id used
+	messageListener: <Process> The message listener.  Just for easy reference when debugging.
 	messageProcessors: <OrderedCollection> The currently registered ChromeMessageProcessors
 	messageQueue: <OrderedCollection> All messages received from the browser.  For debugging only and should eventually be removed.
 	rootNode: The root ChromeNode of the current page

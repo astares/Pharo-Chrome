@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "AlistairGrant 5/28/2017 13:18",
+	"commentStamp" : "AlistairGrant 5/28/2017 16:57",
 	"super" : "Object",
 	"category" : "Chrome-Core-Model",
 	"classinstvars" : [ ],
@@ -15,6 +15,7 @@
 		"devtoolsFrontendUrl",
 		"webSocket",
 		"messageId",
+		"messageListener",
 		"messageProcessors",
 		"messageProcessorMutex",
 		"messageQueue",
