@@ -1,6 +1,6 @@
 operations - network
 enableNetwork
 
-	^self sendMessageDictionary: ({
+	^self sendMessage: ({
         'method' -> 'Network.enable'
       } asDictionary)

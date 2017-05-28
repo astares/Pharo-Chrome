@@ -5,7 +5,7 @@ requestChildNodesAt: rootNode depth: depth
 
 	processor := ChromeSetChildNodeProcessor rootNode: rootNode.
 	self addMessageProcessor: processor.
-	result := self sendMessageDictionary: {
+	result := self sendMessage: {
         'method' -> 'DOM.requestChildNodes'.
         'params' -> {'nodeId' -> rootNode nodeId. 'depth' -> depth} asDictionary
       } asDictionary.

@@ -1,5 +1,6 @@
 private
-sendMessageDictionary: aDictionary wait: waitBoolean
+sendMessage: aDictionary wait: waitBoolean
+	"Send the supplied message to the browser, if requested, wait for the response and raise an exception on failure."
 
 	| result processor mid |
 

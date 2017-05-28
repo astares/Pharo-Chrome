@@ -1,4 +1,5 @@
 private
-sendMessage: aMessage
+sendMessage: aDictionary
+	"Send the supplied message to the browser, wait for the response and raise an exception on failure."
 
-	^self webSocket sendMessage: aMessage
+	^self sendMessage: aDictionary wait: true.

@@ -1,6 +1,6 @@
 operations - page
 enablePage
 
-	^self sendMessageDictionary: {
+	^self sendMessage: {
         'method' -> 'Page.enable'
       } asDictionary

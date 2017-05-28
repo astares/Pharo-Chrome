@@ -8,7 +8,7 @@ navigateTo: anURL
 	processor := ChromeFrameLoadingProcessor frameId: nil.
 	processor pageLoadDelay: pageLoadDelay.
 	self addMessageProcessor: processor.
-	result := self sendMessageDictionary: {
+	result := self sendMessage: {
         'method' -> 'Page.navigate'.
         'params' -> { 'url' -> anURL } asDictionary.
 		} asDictionary.

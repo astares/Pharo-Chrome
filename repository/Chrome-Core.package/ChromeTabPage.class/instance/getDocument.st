@@ -2,7 +2,7 @@ operations - dom
 getDocument
 
 	| result |
-	result := self sendMessageDictionary: ({
+	result := self sendMessage: ({
         'method' -> 'DOM.getDocument'
       } asDictionary).
 	self checkResponse: result.

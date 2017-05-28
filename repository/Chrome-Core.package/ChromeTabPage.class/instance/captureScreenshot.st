@@ -2,7 +2,7 @@ operations - page
 captureScreenshot
 
 	| base64 json |
-	json := self sendMessageDictionary: {
+	json := self sendMessage: {
         'method' -> 'Page.captureScreenshot'.
         'params' ->  { }
       } asDictionary.

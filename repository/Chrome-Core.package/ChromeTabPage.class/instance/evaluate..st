@@ -1,7 +1,7 @@
 operations - runtime
 evaluate: aString
 
-	^self sendMessageDictionary: {
+	^self sendMessage: {
         'method' -> 'Runtime.evaluate'.
         'params' -> {'expression' -> aString} asDictionary
       } asDictionary

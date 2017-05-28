@@ -1,6 +1,6 @@
 operations - dom
 enableDOM
 
-	^self sendMessageDictionary: ({
+	^self sendMessage: ({
         'method' -> 'DOM.enable'
       } asDictionary)
