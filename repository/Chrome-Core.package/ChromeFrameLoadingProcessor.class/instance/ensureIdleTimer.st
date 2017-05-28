@@ -6,15 +6,23 @@ ensureIdleTimer
 	idleProcess ifNotNil: [ ^self ].
 	
 	idleProcess := [ | done timeDiff frameLoaded |
-		StringSignal log: 'Started idle timer'.
+		ChromeIdleTimerSignal new
+			message: 'Started idle timer';
+			log.
 		done := false.
 		[ done ] whileFalse:
 			[ (Delay forMilliseconds: 500) wait.
 			frameLoaded := stoppedLoading includes: frameId.
-			StringSignal log: 'Idle: ', loadedTimestamp printString, ' frameLoaded: ', frameLoaded printString.
+			ChromeIdleTimerSignal new
+				message: 'Checking';
+				loadedTimestamp: loadedTimestamp;
+				frameLoaded: frameLoaded;
+				log.
 			(loadedTimestamp isNotNil and: [ frameLoaded ]) ifTrue: [
 				timeDiff := (DateAndTime now - loadedTimestamp) asMilliSeconds.
-				StringSignal log: 'timeDiff: ', timeDiff printString.
+				ChromeIdleTimerSignal new 
+					log: 'timeDiff';
+					timeDiff: timeDiff.
 		 		timeDiff >= pageLoadDelay ifTrue:
 					[ done := true.
 					semaphore signal. ]

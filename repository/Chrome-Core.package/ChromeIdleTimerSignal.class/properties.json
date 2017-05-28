@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BeaconSignal",
+	"category" : "Chrome-Core-Beacon",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"loadedTimestamp",
+		"frameLoaded",
+		"timeDiff"
+	],
+	"name" : "ChromeIdleTimerSignal",
+	"type" : "normal"
+}
