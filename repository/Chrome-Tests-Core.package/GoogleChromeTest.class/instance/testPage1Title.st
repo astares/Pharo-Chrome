@@ -5,5 +5,4 @@ testPage1Title
 	| page |
 
 	page := GoogleChromeTestResource current page.
-	page updateTitle.
 	self assert: page title equals: 'Pharo-Chrome Test Page'

@@ -5,9 +5,6 @@ testPage1Document
 	| page rootNode h1 a |
 
 	page := GoogleChromeTestResource current page.
-	page
-		getDocument;
-		getMissingChildren.
 	rootNode := page rootNode.
 	h1 := rootNode findAllTags: 'h1'.
 	self assert: h1 isNotEmpty description: 'Failed to find expected heading node'.

@@ -15,4 +15,7 @@ setUp
 	page 
 		enablePage;
 		enableDOM;
-		navigateTo: 'file://', page1html fullName.
+		navigateTo: 'file://', page1html fullName;
+		getDocument;
+		getMissingChildren;
+		updateTitle.
