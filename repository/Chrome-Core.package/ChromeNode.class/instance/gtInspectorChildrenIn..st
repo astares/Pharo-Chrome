@@ -7,6 +7,6 @@ gtInspectorChildrenIn: composite
 		display: [ self children ];
 		column: 'Name' 
 			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each nodeName ];
-		column: 'Value' 
-			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each dictionary ];
+		column: 'Contents' 
+			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each contents ];
 		send: [ :selection | selection ]

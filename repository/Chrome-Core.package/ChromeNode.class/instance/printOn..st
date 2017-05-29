@@ -4,4 +4,7 @@ printOn: aStream
 	super printOn: aStream.
 	aStream << '('.
 	self nodeId printOn: aStream.
-	aStream << ')'.
+	aStream
+		<< ' ';
+		<< self nodeName;
+		<< ')'.
