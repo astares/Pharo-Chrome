@@ -14,7 +14,7 @@ baseline: spec
 			spec
 				className: #ConfigurationOfBeacon;
 				versionString: #stable;
-				smalltalkhubUser: 'girba' project: 'Beacon' ].
+				repository: 'http://smalltalkhub.com/mc/girba/Beacon/main/' ].
 		spec 
 			package: #'Chrome-Core' with: [
 				spec requires: #('ZincHTTPComponents' 'Beacon'). ];
