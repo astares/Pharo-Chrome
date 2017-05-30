@@ -16,3 +16,37 @@ GoogleChrome get: 'http://pharo.org'
 
 An example of more detailed operations are available in `GoogleChrome class>>exampleNavigation`.
 
+## Installing
+
+Depending on your OS, you will need to install one of the OS<Platform> packages:
+
+* OSLinuxCentOS
+* OSLinuxUbuntu
+* OSOSX
+* OSRaspbian
+* OSUnix
+* OSWindows
+
+E.g.:
+
+```smalltalk
+Metacello new
+	configuration: 'OSLinuxUbuntu';
+	repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main/';
+	load.
+```
+
+then the main Pharo-Chrome package:
+
+```smalltalk
+Metacello new
+	baseline: 'Chrome';
+	repository: 'github://akgrant43/Pharo-Chrome:master/repository';
+	load.
+```
+
+To keep the original Monticello idea of having #stable and #development versions, Pharo-Chrome is mostly using the GitFlow workflow:
+
+* The `master` branch is #stable
+* The `development` branch is #development
+
