@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "AlistairGrant 5/25/2017 18:30",
+	"super" : "ChromeMessageProcessor",
+	"category" : "Chrome-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"frameId",
+		"loading",
+		"stoppedLoading",
+		"loadedTimestamp",
+		"idleProcess",
+		"pageLoadDelay"
+	],
+	"name" : "ChromeFrameLoadingProcessor",
+	"type" : "normal"
+}

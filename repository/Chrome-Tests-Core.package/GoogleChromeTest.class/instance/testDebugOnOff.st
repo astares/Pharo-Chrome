@@ -3,7 +3,7 @@ testDebugOnOff
 	|instance|
 	
 	instance := GoogleChrome new.
-	self deny: instance isInDebugMode.
+	self assert: instance isInDebugMode.
 	
 	instance debugOn. 
 	self assert: instance isInDebugMode.
