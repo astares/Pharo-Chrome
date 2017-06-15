@@ -7,22 +7,13 @@ openURL: anURL
 	[ self version ]
 		on: ConnectionTimedOut
 		do: [ :ex |
-			args := String streamContents: [ :stream |
-				userDataDir ifNotNil: [ 
-					stream
-						<< ' --user-data-dir=';
-						<< userDataDir fullName ].
-				self isInDebugMode 
-					ifFalse: [ stream
-									<< ' "';
-									<< anURL;
-									<< '"' ]
-					ifTrue: [ stream
-									<< ' --remote-debugging-port=';
-									<< debugPort asString;
-									<< ' "';
-									<< anURL;
-									<< '"' ] ].
+			args := Array streamContents: [ :stream |
+				userDataDir ifNotNil: 
+					[ stream nextPut: '--user-data-dir=', userDataDir fullName ].
+				self isInDebugMode ifTrue: 
+					[ stream nextPut: '--remote-debugging-port=', debugPort asString ].
+				anURL ifNotEmpty: 
+					[ stream nextPut: anURL ] ].
 			chromeProcess := ChromePlatform current openChromeWith: args.
 			"It can take a while for the browser to actually start.
 			Ping the browser until we get a successfull response."
