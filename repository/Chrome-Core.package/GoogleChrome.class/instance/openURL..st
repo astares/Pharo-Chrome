@@ -23,7 +23,7 @@ openURL: anURL
 									<< ' "';
 									<< anURL;
 									<< '"' ] ].
-			ChromePlatform current openChromeWith: args.
+			chromeProcess := ChromePlatform current openChromeWith: args.
 			"It can take a while for the browser to actually start.
 			Ping the browser until we get a successfull response."
 			retryCount := 10.

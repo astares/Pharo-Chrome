@@ -1,6 +1,11 @@
 utilities
 openChromeWith: arguments
  	
-	| executableLocation |
+	| executableLocation argArray process |
 	executableLocation := self defaultExecutableLocation copyReplaceAll: ' ' with: '\ '.
-	#UNIXSystem asClass system: executableLocation,' ', arguments, ' &'
+	argArray := Array streamContents: [ :stream |
+		(' ' split: arguments) do: [ :each |
+			each ifNotEmpty: [stream nextPut: each] ] ].
+	process := AKGOSProcess command: executableLocation arguments: argArray.
+	process run.
+	^process
