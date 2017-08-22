@@ -14,4 +14,5 @@ get: anURL
 	page navigateTo: anURL.
 	page getDocument.
 	page getMissingChildren.
+	chrome closeAndExit.
 	^page rootNode
