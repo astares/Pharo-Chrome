@@ -20,7 +20,7 @@ baseline: spec
 				repository: 'github://akgrant43/pharo-akgosprocess/mc' ].
 		spec 
 			package: #'Chrome-Core' with: [
-				spec requires: #('ZincHTTPComponents' 'Beacon'). ];
+				spec requires: #('ZincHTTPComponents' 'Beacon' 'AKGOSProcess'). ];
 			package: #'Chrome-Tests-Core' with: [
 				spec requires: #(#'Chrome-Core' ). ].
 		spec 
