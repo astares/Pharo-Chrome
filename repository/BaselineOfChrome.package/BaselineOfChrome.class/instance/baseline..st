@@ -15,7 +15,7 @@ baseline: spec
 				className: #ConfigurationOfBeacon;
 				versionString: #development;
 				repository: 'http://smalltalkhub.com/mc/girba/Beacon/main/' ].
-		spec project: 'AKGOSProcess' with: [ 
+		spec baseline: 'AKGOSProcess' with: [ 
 			spec
 				repository: 'github://akgrant43/pharo-akgosprocess/mc' ].
 		spec 
