@@ -13,8 +13,11 @@ baseline: spec
 		spec project: 'Beacon' with: [ 
 			spec
 				className: #ConfigurationOfBeacon;
-				versionString: #stable;
+				versionString: #development;
 				repository: 'http://smalltalkhub.com/mc/girba/Beacon/main/' ].
+		spec baseline: 'AKGOSProcess' with: [ 
+			spec
+				repository: 'github://akgrant43/pharo-akgosprocess/mc' ].
 		spec 
 			package: #'Chrome-Core' with: [
 				spec requires: #('ZincHTTPComponents' 'Beacon'). ];
