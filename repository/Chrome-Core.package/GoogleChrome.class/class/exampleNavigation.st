@@ -1,5 +1,6 @@
 examples
 exampleNavigation
+	<gtExample>
 	| chrome page logger |
 
 	logger := InMemoryLogger new.
