@@ -16,6 +16,13 @@ GoogleChrome get: 'http://pharo.org'
 
 An example of more detailed operations are available in `GoogleChrome class>>exampleNavigation`.
 
+## Features
+
+* A ZnEasy like feature for retrieving pages: #get:
+* Extraction of tabular data (html tables): #extractTables, #tableData
+* Screenshot capture: #captureScreenshot
+* Headless mode
+
 ## Installation
 
 Unixy platforms (Linux & MacOS) require OSProcess or OSSubprocess to be installed prior to loading Pharo-Chrome.  To load OSSubprocess in 32 bit images:
@@ -54,6 +61,8 @@ To keep the original Monticello idea of having #stable and #development versions
 
 
 ## A Short Demo
+
+### Stock price retieval
 
 As a demonstration of Pharo-Chrome, we'll retrieve some stock prices from the Australian ASX S&P 200 stock index:
 
@@ -113,4 +122,21 @@ Metacello new
   baseline: 'DataFrame';
   repository: 'github://PolyMathOrg/DataFrame';
   load.
+```
+
+### pharo.org screenshot
+
+To retrieve a png image of the pharo.org front page in headless mode:
+
+```smalltalk
+| browser page image |
+
+browser := GoogleChrome new.
+browser headless: true.
+browser open.
+page := browser firstTab.
+page get: 'http://pharo.org'.
+image := page captureScreenshot.
+browser closeAndExit.
+image
 ```
