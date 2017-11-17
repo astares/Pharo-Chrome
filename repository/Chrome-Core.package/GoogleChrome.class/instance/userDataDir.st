@@ -1,3 +1,3 @@
 accessing
 userDataDir
-	^ userDataDir
+	^self settings userDataDir

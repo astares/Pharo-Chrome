@@ -8,10 +8,7 @@ openURL: anURL
 		on: ConnectionTimedOut
 		do: [ :ex |
 			args := Array streamContents: [ :stream |
-				userDataDir ifNotNil: 
-					[ stream nextPut: '--user-data-dir=', userDataDir fullName ].
-				self isInDebugMode ifTrue: 
-					[ stream nextPut: '--remote-debugging-port=', debugPort asString ].
+				self settings addArgumentsToStream: stream.
 				anURL ifNotEmpty: 
 					[ stream nextPut: anURL ] ].
 			chromeProcess := ChromePlatform current openChromeWith: args.
