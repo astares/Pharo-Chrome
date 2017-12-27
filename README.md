@@ -50,7 +50,7 @@ Once the platform dependent packages have been loaded, load the main Pharo-Chrom
 ```smalltalk
 Metacello new
 	baseline: 'Chrome';
-	repository: 'github://akgrant43/Pharo-Chrome:master/repository';
+	repository: 'github://astares/Pharo-Chrome:master/repository';
 	load.
 ```
 
