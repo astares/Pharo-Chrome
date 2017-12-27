@@ -25,7 +25,7 @@ An example of more detailed operations are available in `GoogleChrome class>>exa
 
 ## Installation
 
-Unixy platforms (Linux & MacOS) require OSProcess or OSSubprocess to be installed prior to loading Pharo-Chrome.  To load OSSubprocess in 32 bit images:
+Unix platforms (Linux & MacOS) require OSProcess or OSSubprocess to be installed prior to loading Pharo-Chrome.  To load OSSubprocess in 32 bit images:
 
 ```smalltalk
 Metacello new
@@ -62,7 +62,7 @@ To keep the original Monticello idea of having #stable and #development versions
 
 ## A Short Demo
 
-### Stock price retieval
+### Stock price retrieval
 
 As a demonstration of Pharo-Chrome, we'll retrieve some stock prices from the Australian ASX S&P 200 stock index:
 
