@@ -1,8 +1,5 @@
-utilities
-sendMessage: aMessage
+private
+sendMessage: aDictionary
+	"Send the supplied message to the browser, wait for the response and raise an exception on failure."
 
-	| webSocket |
-	webSocket := ZnWebSocket to: self webSocketDebuggerUrl.
-	^[ webSocket 
-  	  sendMessage: aMessage;
-    	readMessage ] ensure: [ webSocket close ].
+	^self sendMessage: aDictionary wait: true.

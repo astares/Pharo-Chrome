@@ -1,2 +1,0 @@
-operating
-newTab

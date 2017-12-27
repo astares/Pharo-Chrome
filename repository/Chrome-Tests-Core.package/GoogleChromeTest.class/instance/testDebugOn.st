@@ -2,4 +2,4 @@ tests
 testDebugOn
 	|instance|
 	instance := GoogleChrome new.
-	self deny: instance isInDebugMode
+	self assert: instance isInDebugMode

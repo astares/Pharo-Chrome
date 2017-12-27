@@ -10,9 +10,17 @@ baseline: spec
 					versionString: #'stable';
 					loads: #('WebSocket');
 					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
+		spec project: 'Beacon' with: [ 
+			spec
+				className: #ConfigurationOfBeacon;
+				versionString: #development;
+				repository: 'http://smalltalkhub.com/mc/girba/Beacon/main/' ].
+		spec baseline: 'AKGOSProcess' with: [ 
+			spec
+				repository: 'github://akgrant43/pharo-akgosprocess/mc' ].
 		spec 
 			package: #'Chrome-Core' with: [
-				spec requires: #('ZincHTTPComponents' ). ];
+				spec requires: #('ZincHTTPComponents' 'Beacon' 'AKGOSProcess'). ];
 			package: #'Chrome-Tests-Core' with: [
 				spec requires: #(#'Chrome-Core' ). ].
 		spec 

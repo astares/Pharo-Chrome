@@ -1,4 +1,4 @@
 tests
 testRegularCreatedIsNotDebugging
 
-	self deny: GoogleChrome new isInDebugMode
+	self assert: GoogleChrome new isInDebugMode

@@ -1,4 +1,4 @@
 defaults
 defaultExecutableLocation
 
-	^'Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+	^'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'

@@ -1,4 +1,4 @@
-testing
+accessing
 isInDebugMode
 
-	^isInDebugMode = true 
+	^self settings isInDebugMode

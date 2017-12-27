@@ -1,3 +1,3 @@
 operating
 debugOn
-	isInDebugMode := true
+	self settings isInDebugMode: true

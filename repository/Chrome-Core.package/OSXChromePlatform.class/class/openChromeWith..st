@@ -1,6 +1,7 @@
 utilities
 openChromeWith: arguments
  	
-	| executableLocation |
-	executableLocation := self defaultExecutableLocation copyReplaceAll: ' ' with: '\ '.
-	#OSXProcess asClass createProcess: executableLocation,' ', arguments, ' &'
+	| process |
+	process := AKGOSProcess command: self defaultExecutableLocation arguments: arguments.
+	process run.
+	^process

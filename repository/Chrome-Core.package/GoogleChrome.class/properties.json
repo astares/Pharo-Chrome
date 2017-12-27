@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"debugPort",
-		"isInDebugMode",
 		"host",
-		"userDataDir"
+		"settings",
+		"webSocket",
+		"chromeProcess"
 	],
 	"name" : "GoogleChrome",
 	"type" : "normal"
