@@ -4,7 +4,8 @@ tearDown
 	| osProcess |
 
 	page1html delete.
-	osProcess := browser chromeProcess process.
+	(browser chromeProcess) ifNotNil: [ osProcess := browser chromeProcess process ].
 	browser closeAndExit.
-	[ osProcess isComplete ] whileFalse:
-		[ (Delay forMilliseconds: 200) wait ].
+	osProcess ifNotNil: [
+		[ osProcess isComplete ] whileFalse:
+			[ (Delay forMilliseconds: 200) wait ]].
