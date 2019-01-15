@@ -15,4 +15,4 @@ captureScreenshot
       } asDictionary.
 	base64 := (json at: 'result') at: 'data'.
 	
-	^Form fromBinaryStream: (Base64MimeConverter mimeDecodeToBytes: base64 readStream) 
+	^Form fromBinaryStream: base64 base64Decoded readStream
