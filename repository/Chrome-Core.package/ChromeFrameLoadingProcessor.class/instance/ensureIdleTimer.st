@@ -8,7 +8,7 @@ ensureIdleTimer
 	idleProcess := [ | done timeDiff frameLoaded |
 		ChromeIdleTimerSignal new
 			message: 'Started idle timer';
-			log.
+			emit.
 		done := false.
 		[ done ] whileFalse:
 			[ (Delay forMilliseconds: 500) wait.
@@ -17,22 +17,22 @@ ensureIdleTimer
 				message: 'Checking';
 				loadedTimestamp: loadedTimestamp;
 				frameLoaded: frameLoaded;
-				log.
+				emit.
 			(loadedTimestamp isNotNil and: [ frameLoaded ]) ifTrue: [
 				timeDiff := (DateAndTime now - loadedTimestamp) asMilliSeconds.
 				ChromeIdleTimerSignal new 
 					message: 'timeDiff';
 					timeDiff: timeDiff;
-					log.
+					emit.
 		 		timeDiff >= pageLoadDelay ifTrue:
 					[ done := true.
 					ChromeIdleTimerSignal new
 						message: 'Signalling';
-						log.
+						emit.
 					semaphore signal. ]
 				]
 			].
 		ChromeIdleTimerSignal new 
 			message: 'Idle Timer Done';
-			log.
+			emit.
 		] forkNamed: 'Chrome Idle Timer'

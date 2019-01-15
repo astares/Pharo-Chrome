@@ -4,17 +4,13 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec project: 'ZincHTTPComponents' with: [
+		spec baseline: 'ZincHTTPComponents' with: [
 				spec
-					className: #ConfigurationOfZincHTTPComponents;
-					versionString: #'stable';
-					loads: #('WebSocket');
-					repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
-		spec project: 'Beacon' with: [ 
+					loads: 'WebSocket';
+					repository: 'github://svenvc/zinc' ].
+		spec baseline: 'Beacon' with: [ 
 			spec
-				className: #ConfigurationOfBeacon;
-				versionString: #development;
-				repository: 'http://smalltalkhub.com/mc/girba/Beacon/main/' ].
+				repository: 'github://pharo-project/pharo-beacon' ].
 		spec baseline: 'AKGOSProcess' with: [ 
 			spec
 				repository: 'github://akgrant43/pharo-akgosprocess/mc' ].
