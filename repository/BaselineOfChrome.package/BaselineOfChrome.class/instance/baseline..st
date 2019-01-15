@@ -7,7 +7,7 @@ baseline: spec
 		spec baseline: 'ZincHTTPComponents' with: [
 				spec
 					loads: 'WebSocket';
-					repository: 'github://svenvc/ZincHTTPComponents' ].
+					repository: 'github://svenvc/zinc' ].
 		spec baseline: 'Beacon' with: [ 
 			spec
 				repository: 'github://pharo-project/pharo-beacon' ].
