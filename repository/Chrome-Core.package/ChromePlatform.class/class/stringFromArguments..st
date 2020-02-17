@@ -1,4 +1,4 @@
-private
+private - utilities
 stringFromArguments: arguments
 	"Answer a string representation of the supplied argument array"
 
