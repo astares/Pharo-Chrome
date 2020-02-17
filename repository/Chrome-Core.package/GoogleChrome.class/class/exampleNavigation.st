@@ -4,9 +4,9 @@ exampleNavigation
 	<gtExample>
 	| chrome page logger |
 
-	logger := InMemoryLogger new.
+	logger := MemoryLogger new.
 	logger start.
-	chrome := GoogleChrome new
+	chrome := self new
             debugOn;
 				debugSession;
             open;

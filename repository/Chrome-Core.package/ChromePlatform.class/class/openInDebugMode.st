@@ -1,4 +1,4 @@
 utilities
 openInDebugMode
 	<script>
-	self current openChromeWith: '--remote-debugging-port=9222'
+	self current openChromeWith: #('--remote-debugging-port=9222')

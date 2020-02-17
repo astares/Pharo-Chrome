@@ -1,6 +1,4 @@
 tests
 testHasPlatform
 
-	self 
-		shouldnt: [ ChromePlatform current ]  
-		raise: Error
+	self assert: ChromePlatform current notNil
