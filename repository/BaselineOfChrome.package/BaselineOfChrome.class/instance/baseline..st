@@ -9,14 +9,10 @@ baseline: spec
 				spec
 					loads: 'WebSocket';
 					repository: 'github://svenvc/zinc' ].
-				
-		spec baseline: 'Beacon' with: [ 
-			spec
-				repository: 'github://pharo-project/pharo-beacon' ].
-			
+				 
 		spec 
 			package: #'Chrome-Core' with: [
-				spec requires: #('ZincHTTPComponents' 'Beacon'). ];
+				spec requires: #('ZincHTTPComponents'). ];
 			package: #'Chrome-Tests-Core' with: [
 				spec requires: #(#'Chrome-Core' ). ].
 		spec 

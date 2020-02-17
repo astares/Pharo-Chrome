@@ -1,3 +1,0 @@
-accessing
-loadedTimestamp
-	^ loadedTimestamp
