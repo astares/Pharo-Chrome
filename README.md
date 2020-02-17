@@ -2,6 +2,16 @@
 
 Pharo-Chrome provides a simple API for Google Chrome's DevTools protocol (https://chromedevtools.github.io/devtools-protocol/).
 
+## Installation via Script
+
+```Smalltalk
+Metacello new 
+	repository: 'github://astares/Pharo-Chrome/src';
+	baseline: 'Chrome';
+	load
+```
+
+
 The are three main public classes in the package:
 
 * GoogleChrome is the interface to the Chrome Browser
