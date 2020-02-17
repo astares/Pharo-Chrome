@@ -1,5 +1,8 @@
 utilities
 loadWebSocketSupport
 	<script>
-	ConfigurationOfZincHTTPComponents project latestVersion load: 'WebSocket'.
-
+	
+	Metacello new 
+		repository: 'github://svnc/zinc/src';
+		baseline: 'ZincHTTPComponents';
+		load: 'WebSocket'
