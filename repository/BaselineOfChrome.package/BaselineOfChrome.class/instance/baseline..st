@@ -7,7 +7,7 @@ baseline: spec
 		
 		spec baseline: 'ZincHTTPComponents' with: [
 				spec
-					loads: 'WebSocket';
+					loads: 'Zinc-WebSocket-Core';
 					repository: 'github://svenvc/zinc' ].
 				 
 		spec 
