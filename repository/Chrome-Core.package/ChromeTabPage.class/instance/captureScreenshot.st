@@ -3,7 +3,7 @@ captureScreenshot
 
 	| base64 json layout clip |
 	layout := self getLayoutMetrics.
-	clip := { 
+	clip := {
 		'x' -> 0.
 		'y' -> 0.
 		'width' -> ((layout at: 'contentSize') at: 'width').
@@ -14,5 +14,5 @@ captureScreenshot
         'params' -> { 'clip' -> clip } asDictionary.
       } asDictionary.
 	base64 := (json at: 'result') at: 'data'.
-	
+
 	^Form fromBinaryStream: base64 base64Decoded readStream

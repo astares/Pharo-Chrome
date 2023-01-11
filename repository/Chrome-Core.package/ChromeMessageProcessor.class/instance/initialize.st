@@ -2,4 +2,4 @@ initialize
 initialize
 
 	super initialize.
-	semaphore := Semaphore new.
+	semaphore := Semaphore new

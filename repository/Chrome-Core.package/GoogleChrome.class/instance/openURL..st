@@ -9,7 +9,7 @@ openURL: anURL
 		do: [ :ex |
 			args := Array streamContents: [ :stream |
 				self settings addArgumentsToStream: stream.
-				anURL ifNotEmpty: 
+				anURL ifNotEmpty:
 					[ stream nextPut: anURL ] ].
 			chromeProcess := ChromePlatform current openChromeWith: args.
 			"It can take a while for the browser to actually start.
@@ -25,4 +25,4 @@ openURL: anURL
 					ifFalse:
 						[ ex1 pass ]
 					].
-		].
+		]

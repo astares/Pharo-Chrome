@@ -1,4 +1,4 @@
 private - testing
 isActive
 
-	^self subclassResponsibility 
+	^self subclassResponsibility

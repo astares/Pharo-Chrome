@@ -10,7 +10,7 @@ stringFromArguments: arguments
 				stream
 					<< ' "';
 					<< argument;
-					<< '"' 
+					<< '"'
 				]
 			ifTrue:
 				[
@@ -19,4 +19,4 @@ stringFromArguments: arguments
 					<< argument
 				].
 			].
-		].
+		]

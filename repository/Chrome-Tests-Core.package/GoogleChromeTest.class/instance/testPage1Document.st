@@ -15,4 +15,4 @@ testPage1Document
 	self assert: a isNotEmpty description: 'Failed to find expected anchour node'.
 	self assert: a size equals: 1.
 	a := a first.
-	self assert: (a attributeAt: 'href') equals: 'http://pharo.org'.
+	self assert: (a attributeAt: 'href') equals: 'http://pharo.org'

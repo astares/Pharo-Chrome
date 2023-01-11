@@ -17,4 +17,4 @@ testTableData
 	self assert: table size equals: 3.
 	self assert: (table at: 1) size equals: 3.
 	self assert: (table at: 2) size equals: 2.
-	self assert: (table at: 3) size equals: 3.
+	self assert: (table at: 3) size equals: 3

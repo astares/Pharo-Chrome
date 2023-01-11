@@ -8,4 +8,4 @@ initialize
 	messageQueue := OrderedCollection new.
 	pageLoadDelay := 2000.
 	socketState := #closed.
-	webSocket := nil.
+	webSocket := nil

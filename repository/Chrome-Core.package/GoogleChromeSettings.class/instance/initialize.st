@@ -7,4 +7,4 @@ initialize
 		debugSession;
 		debugPort: self class debugPort;
 		disableGPU: false;
-		headless: false.
+		headless: false

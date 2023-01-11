@@ -2,9 +2,8 @@ running
 openForRemoteDebugging
 	"Open in debug mode"
 
-	self 
+	self
 		debugOn;
 		open.
 	2 seconds wait.
-	^self	
-	
+	^self

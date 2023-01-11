@@ -5,4 +5,4 @@ detect: aBlock ifFound: foundBlock ifNone: execptionBlock
 	(aBlock value: self) ifTrue: [ ^foundBlock cull: self ].
 	self allChildrenDo: [ :each |
 		(aBlock value: each) ifTrue: [ ^foundBlock cull: each ] ].
-	^execptionBlock value.
+	^execptionBlock value

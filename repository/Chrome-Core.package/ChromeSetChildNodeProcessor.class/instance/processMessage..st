@@ -18,4 +18,4 @@ processMessage: aMessageDictionary
 					rootNode childNodeCount: rootNode children size.
 					semaphore signal ].
 				].
-			].
+			]

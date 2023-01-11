@@ -15,6 +15,6 @@ tableData
 			stream nextPut: (Array streamContents: [ :rowStream |
 				cells := row findAllTags: #('td' 'th').
 				cells do: [ :cell |
-					rowStream nextPut: (cell 
+					rowStream nextPut: (cell
 						detect: [ :child | child isString ]
-						ifNone: ['String not found']) contents ] ]) ] ].
+						ifNone: ['String not found']) contents ] ]) ] ]

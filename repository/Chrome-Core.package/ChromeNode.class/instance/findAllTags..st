@@ -1,5 +1,5 @@
 finding tags
-findAllTags: anObject 
+findAllTags: anObject
 	| findBlock |
 	findBlock := self createFindTagBlock: anObject.
 	^ Array streamContents: [ :aStream |

@@ -3,4 +3,4 @@ close
 
 	socketState := #closed.
 	self webSocket close.
-	webSocket := nil.
+	webSocket := nil

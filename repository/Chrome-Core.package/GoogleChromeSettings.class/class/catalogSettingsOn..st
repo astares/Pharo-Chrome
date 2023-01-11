@@ -1,11 +1,11 @@
 settings
-catalogSettingsOn: aBuilder  
-	<systemsettings>  
+catalogSettingsOn: aBuilder
+	<systemsettings>
 	(aBuilder group: #chrome)
 		label: 'Chrome';
 		parent: #tools;
 		description: 'All Google Chrome settings';
-		with: [ 
+		with: [
 			(aBuilder setting: #debugPort)
 						target: self;
 						label: 'Debug Port';
@@ -15,5 +15,5 @@ catalogSettingsOn: aBuilder
 				target: self;
 				label: 'Executable';
 				type: #FilePathEncoder;
-				description: 'Location of the Google Chrome executable'			
+				description: 'Location of the Google Chrome executable'
 		]

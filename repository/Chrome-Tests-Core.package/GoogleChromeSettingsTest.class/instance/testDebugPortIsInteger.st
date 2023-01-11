@@ -1,4 +1,4 @@
 tests
 testDebugPortIsInteger
 
-	self assert: GoogleChromeSettings debugPort isNumber 
+	self assert: GoogleChromeSettings debugPort isNumber

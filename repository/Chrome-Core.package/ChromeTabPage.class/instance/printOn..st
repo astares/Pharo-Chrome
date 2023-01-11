@@ -1,4 +1,4 @@
 printing
 printOn: aStream
 
-	aStream nextPutAll: self title asString 
+	aStream nextPutAll: self title asString

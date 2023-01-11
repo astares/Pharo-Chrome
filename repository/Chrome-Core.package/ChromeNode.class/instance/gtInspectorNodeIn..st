@@ -5,8 +5,8 @@ gtInspectorNodeIn: composite
 	^ (composite fastTable)
 		title: 'Node';
 		display: [ self dictionary associations ];
-		column: 'Key' 
+		column: 'Key'
 			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each key ];
-		column: 'Value' 
+		column: 'Value'
 			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each value ];
 		send: [ :selection | selection ]

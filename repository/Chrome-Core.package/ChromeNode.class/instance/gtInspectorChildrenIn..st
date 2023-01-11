@@ -5,8 +5,8 @@ gtInspectorChildrenIn: composite
 	^ (composite fastTable)
 		title: 'Children';
 		display: [ self children ];
-		column: 'Name' 
+		column: 'Name'
 			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each nodeName ];
-		column: 'Contents' 
+		column: 'Contents'
 			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each contents ];
 		send: [ :selection | selection ]

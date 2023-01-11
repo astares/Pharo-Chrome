@@ -3,4 +3,4 @@ rootNode: rootNode
 
 	^self new
 		rootNode: rootNode;
-		yourself.
+		yourself

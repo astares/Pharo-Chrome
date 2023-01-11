@@ -3,4 +3,4 @@ enableDebugger
 
 	^self sendMessage: {
         'method' -> 'Debugger.enable'
-      } asDictionary.
+      } asDictionary

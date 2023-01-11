@@ -1,5 +1,4 @@
 running
 tearDown
 
-	page1html delete.
-	
+	page1html delete

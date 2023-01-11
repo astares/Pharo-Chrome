@@ -6,4 +6,4 @@ testExtractTables
 	| page |
 
 	page := GoogleChromeTestResource current page.
-	self assert: page extractTables keys sorted equals: #('First Table' 'table2').
+	self assert: page extractTables keys sorted equals: #('First Table' 'table2')

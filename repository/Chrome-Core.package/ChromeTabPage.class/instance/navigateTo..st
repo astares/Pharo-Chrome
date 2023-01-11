@@ -16,4 +16,4 @@ navigateTo: anURL
 	processor frameId: ((result at: 'result') at: 'frameId').
 	processor wait.
 	"self removeMessageProcessor: processor."
-	^result.
+	^result

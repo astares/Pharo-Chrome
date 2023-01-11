@@ -8,7 +8,7 @@ sendMessage: aDictionary wait: waitBoolean
 	"Ensure that a message id is included"
 	mid := aDictionary at: 'id' ifAbsentPut: [self nextMessageId].
 	"If waiting, set up the message processor to signal on completion"
-	waitBoolean ifTrue: [ 
+	waitBoolean ifTrue: [
 		processor := ChromeStatusMessageProcessor forMessageId: mid.
 		self addMessageProcessor: processor ].
 	"Send the message"

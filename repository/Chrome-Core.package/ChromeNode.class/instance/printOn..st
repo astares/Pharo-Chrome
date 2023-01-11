@@ -7,4 +7,4 @@ printOn: aStream
 	aStream
 		<< ' ';
 		<< self nodeName;
-		<< ')'.
+		<< ')'

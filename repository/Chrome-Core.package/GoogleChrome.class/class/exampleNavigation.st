@@ -1,6 +1,6 @@
 examples
 exampleNavigation
- 
+
 	<gtExample>
 	| chrome page logger |
 

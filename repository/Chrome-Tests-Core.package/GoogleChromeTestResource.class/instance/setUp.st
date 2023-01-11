@@ -4,9 +4,9 @@ setUp
 	| settings |
 
 	page1html := FileLocator temp / 'GoogleChromeTestResource-Page1.html'.
-	page1html writeStreamDo: 
+	page1html writeStreamDo:
 		[ :stream | stream nextPutAll: self class page1source ]
-	ifPresent: 
+	ifPresent:
 		[ self error: page1html fullName, ' shouldn''t exist' ].
 	browser := GoogleChrome new.
 	settings := browser settings.
@@ -16,10 +16,10 @@ setUp
 		headless: true.
 	browser open.
 	page := browser tabPages first.
-	page 
+	page
 		enablePage;
 		enableDOM;
 		navigateTo: 'file://', page1html fullName;
 		getDocument;
 		getMissingChildren;
-		updateTitle.
+		updateTitle
