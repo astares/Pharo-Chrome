@@ -3,7 +3,5 @@ initialize
 
 	super initialize.
 	loading := Bag new.
-	stoppedLoading := Bag new.
-	loadedTimestamp := nil.
-	idleProcess := nil.
-	pageLoadDelay := 2000.
+	stoppedLoading := Bag new. 
+	pageLoadDelay := 2000
