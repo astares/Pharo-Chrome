@@ -1,4 +1,5 @@
 examples
 exampleEvalutionOfJavaScript
-	GoogleChrome openForRemoteWork
+
+	self openForRemoteWork
  		tabPages first evaluate: 'alert(''Hello'')'
