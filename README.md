@@ -40,7 +40,7 @@ Unix platforms (Linux & MacOS) require OSProcess or OSSubprocess to be installed
 ```smalltalk
 Metacello new
 	configuration: 'OSSubprocess';
-	repository: 'github://marianopeck/OSSubprocess:master/repository';
+	repository: 'github://pharo-contributions/OSSubprocess:master/repository';
 	version: #stable;
 	load.
 ```
