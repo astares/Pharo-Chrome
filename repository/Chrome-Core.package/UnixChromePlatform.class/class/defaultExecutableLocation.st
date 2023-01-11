@@ -1,4 +1,4 @@
 defaults
 defaultExecutableLocation
 
-	^#('/opt/google/chrome/chrome' '/usr/bin/chromium-browser') detect: [ :each | each asFileReference exists ].
+	^self defaultExecutableLocations detect: [ :each | each asFileReference exists ]
