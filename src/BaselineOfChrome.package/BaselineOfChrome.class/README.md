@@ -1,1 +1,0 @@
-Baseline for Chrome project

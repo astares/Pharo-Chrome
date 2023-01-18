@@ -1,1 +1,0 @@
-Process status message from Chrome

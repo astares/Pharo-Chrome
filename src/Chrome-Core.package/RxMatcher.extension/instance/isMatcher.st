@@ -1,3 +1,0 @@
-*Chrome-Core
-isMatcher
-	^ true
