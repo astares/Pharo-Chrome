@@ -4,6 +4,8 @@ Pharo-Chrome provides a simple API for Google Chrome's DevTools protocol (https:
 
 ## Installation via Script
 
+First load [OSSubprocess](https://github.com/pharo-contributions/OSSubprocess) or [Pharo-OS-Windows](https://github.com/astares/Pharo-OS-Windows) if you are on Windows 
+
 ```Smalltalk
 Metacello new 
 	repository: 'github://astares/Pharo-Chrome:main/src';
@@ -39,9 +41,8 @@ Unix platforms (Linux & MacOS) require OSProcess or OSSubprocess to be installed
 
 ```smalltalk
 Metacello new
-	configuration: 'OSSubprocess';
-	repository: 'github://pharo-contributions/OSSubprocess:master/repository';
-	version: #stable;
+ 	baseline: 'OSSubprocess';
+ 	repository: 'github://pharo-contributions/OSSubprocess:v1.3.0/repository';
 	load.
 ```
 
@@ -49,10 +50,10 @@ Metacello new
 On Windows the OSWindows package is required:
 
 ```smalltalk
-Metacello new
-	configuration: 'OSWindows';
-	repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main/';
-	load.
+Metacello new 
+	repository: 'github://astares/Pharo-OS-Windows/src';
+	baseline: 'OSWindows' ;
+	load
 ```
 
 Once the platform dependent packages have been loaded, load the main Pharo-Chrome package:
