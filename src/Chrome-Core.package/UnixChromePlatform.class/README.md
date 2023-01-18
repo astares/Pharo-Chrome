@@ -1,1 +1,0 @@
-Chrome on Unix flavours
