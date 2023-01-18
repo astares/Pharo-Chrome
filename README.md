@@ -6,7 +6,7 @@ Pharo-Chrome provides a simple API for Google Chrome's DevTools protocol (https:
 
 ```Smalltalk
 Metacello new 
-	repository: 'github://astares/Pharo-Chrome/src';
+	repository: 'github://astares/Pharo-Chrome:main/src';
 	baseline: 'Chrome';
 	load
 ```
