@@ -1,5 +1,7 @@
 "
-Baseline for Chrome project
+Baseline for Pharo Chrome project
+
+See [https://github.com/astares/Pharo-Chrome](https://github.com/astares/Pharo-Chrome)
 "
 Class {
 	#name : #BaselineOfChrome,
@@ -17,7 +19,7 @@ BaselineOfChrome class >> loadWebSocketSupport [
 		load: 'WebSocket'
 ]
 
-{ #category : #baseline }
+{ #category : #baselines }
 BaselineOfChrome >> baseline: spec [
 	<baseline>
 
@@ -30,13 +32,12 @@ BaselineOfChrome >> baseline: spec [
 					repository: 'github://svenvc/zinc' ].
 				 
 		spec 
-			package: #'Chrome-Core' with: [
-				spec requires: #('ZincHTTPComponents'). ];
-			package: #'Chrome-Tests-Core' with: [
-				spec requires: #(#'Chrome-Core' ). ].
+			package: #'Chrome-Core' with: [ spec requires: #('ZincHTTPComponents') ];
+			package: #'Chrome-Core-Tests' with: [ spec requires: #(#'Chrome-Core') ].
 		spec 
 			group: 'Core' with: #(#'Chrome-Core' );
-			group: 'Tests' with: #(#'Chrome-Tests-Core' );
+			group: 'Tests' with: #(#'Chrome-Core-Tests' );
+			group: 'CI' with: #('Tests');
 			group: 'all' with: #('Core' 'Tests' );
 			group: 'default' with: #('all' ). ].
 
