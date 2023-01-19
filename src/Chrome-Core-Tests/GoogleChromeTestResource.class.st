@@ -9,7 +9,7 @@ Class {
 		'browser',
 		'page'
 	],
-	#category : 'Chrome-Tests-Core-Resources'
+	#category : 'Chrome-Core-Tests-Resources'
 }
 
 { #category : #private }

@@ -1,7 +1,7 @@
 Class {
 	#name : #ChromeNodeTest,
 	#superclass : #TestCase,
-	#category : 'Chrome-Tests-Core-Nodes'
+	#category : 'Chrome-Core-Tests-Nodes'
 }
 
 { #category : #resources }

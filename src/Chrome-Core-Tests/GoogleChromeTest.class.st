@@ -4,7 +4,7 @@ Unit test for google chrome
 Class {
 	#name : #GoogleChromeTest,
 	#superclass : #TestCase,
-	#category : 'Chrome-Tests-Core-Base'
+	#category : 'Chrome-Core-Tests-Base'
 }
 
 { #category : #resources }
