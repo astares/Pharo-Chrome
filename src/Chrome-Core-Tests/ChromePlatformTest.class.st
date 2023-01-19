@@ -4,7 +4,7 @@ Unit test for Chrome platform
 Class {
 	#name : #ChromePlatformTest,
 	#superclass : #TestCase,
-	#category : 'ChromeCore-Tests-Utilities'
+	#category : 'Chrome-Core-Tests-Utilities'
 }
 
 { #category : #tests }
