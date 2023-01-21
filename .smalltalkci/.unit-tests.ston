@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'Values',
+      #baseline : 'Chrome',
       #directory : '../src',
       #load : [ 'CI' ],
       #platforms : [  #pharo ]
@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-      #packages : [ 'Values*' ],
+      #packages : [ 'Chrome*' ],
       #format: #lcov
     }
   }
