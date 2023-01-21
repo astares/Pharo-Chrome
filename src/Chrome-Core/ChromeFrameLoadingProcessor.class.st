@@ -12,7 +12,7 @@ Class {
 		'idleProcess',
 		'pageLoadDelay'
 	],
-	#category : 'Chrome-Core-Model'
+	#category : #'Chrome-Core-Model'
 }
 
 { #category : #'instance creation' }
@@ -63,7 +63,7 @@ ChromeFrameLoadingProcessor >> initialize [
 
 	super initialize.
 	loading := Bag new.
-	stoppedLoading := Bag new. 
+	stoppedLoading := Bag new.
 	pageLoadDelay := 2000
 ]
 

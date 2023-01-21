@@ -6,14 +6,14 @@ See [https://github.com/astares/Pharo-Chrome](https://github.com/astares/Pharo-C
 Class {
 	#name : #BaselineOfChrome,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfChrome'
+	#category : #BaselineOfChrome
 }
 
 { #category : #utilities }
 BaselineOfChrome class >> loadWebSocketSupport [
 	<script>
-	
-	Metacello new 
+
+	Metacello new
 		repository: 'github://svnc/zinc/src';
 		baseline: 'ZincHTTPComponents';
 		load: 'WebSocket'
@@ -25,20 +25,19 @@ BaselineOfChrome >> baseline: spec [
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		
+
 		spec baseline: 'ZincHTTPComponents' with: [
 				spec
 					loads: 'Zinc-WebSocket-Core';
 					repository: 'github://svenvc/zinc' ].
-				 
-		spec 
+
+		spec
 			package: #'Chrome-Core' with: [ spec requires: #('ZincHTTPComponents') ];
 			package: #'Chrome-Core-Tests' with: [ spec requires: #(#'Chrome-Core') ].
-		spec 
+		spec
 			group: 'Core' with: #(#'Chrome-Core' );
 			group: 'Tests' with: #(#'Chrome-Core-Tests' );
 			group: 'CI' with: #('Tests');
 			group: 'all' with: #('Core' 'Tests' );
-			group: 'default' with: #('all' ). ].
-
+			group: 'default' with: #('all' ). ]
 ]
