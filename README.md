@@ -12,7 +12,7 @@ Pharo-Chrome provides a simple API for Google Chrome's DevTools protocol (https:
 
 ## Installation via Script
 
-First load [Pharo-OS-Windows](https://github.com/astares/Pharo-OS-Windows) if you are on Windows or [OSSubprocess](https://github.com/pharo-contributions/OSSubprocess) for Linux and Mac
+First load [Pharo-OS-Windows](https://github.com/astares/Pharo-OS-Windows) if you are on Windows or [OSSubprocess](https://github.com/pharo-contributions/OSSubprocess) for Linux and Mac (see below). Then load:
 
 ```Smalltalk
 Metacello new 
