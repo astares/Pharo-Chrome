@@ -2,10 +2,6 @@
 
 Pharo-Chrome provides a simple API for Google Chrome's DevTools protocol (https://chromedevtools.github.io/devtools-protocol/).
 
-[![Unit Tests](https://github.com/astares/Pharo-Pomodoro/workflows/Unit%20Tests/badge.svg?branch=main)](https://github.com/astares/Pharo-Chrome/actions?query=workflow%3AUnit%20Tests)
-[![Coverage Status](https://codecov.io/github/astares/Pharo-Chrome/coverage.svg?branch=main)](https://codecov.io/gh/astares/Pharo-Chrome/branch/main)
-
-
 [![Pharo version](https://img.shields.io/badge/Pharo-9.0-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-%23aac9ff.svg)](https://pharo.org/download)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-%23aac9ff.svg)](https://pharo.org/download)
